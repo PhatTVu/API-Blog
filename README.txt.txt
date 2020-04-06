@@ -1,1 +1,0 @@
-This blog discusses about social media analytic and extracting data from social media using API.
