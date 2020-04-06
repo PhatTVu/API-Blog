@@ -10,17 +10,18 @@
 
 
     <body>
+        <!-- NAVIGATION BAR -->
         <nav id="navbar">
             <ul class="bg-dark">
                 <li class="nav-item"> <a href='#'> Home </a> </li>
             </ul>
         </nav>
-        <h1> Each Blog Post Needs a Main Title Statement</h1>
-
+       
         <img class="img-fluid" src='images/title.png'>
 
 <div class="container">
 
+        <!-- INTRODUCTION -->
         <h3>Introduction</h3>
         <p class="bg-white outline">
             This blog is about social media analytic and extracting data from social media using API.
@@ -34,61 +35,100 @@
             <li>Why API is usefull for developer?</li>
         </ul>
         </div>
+        <hr>
 
-        <h3 class="text-green">Social Media Analytics</h3>
-        <p class="bg-green">
+        <!-- SOCICAL MEDIA ANALYTICS -->
+        <h3>Social Media Analytics</h3>
+        <p class="bg-green outline">
             Social Media Analytics refers to the approach of collecting data from social media sites and blogs and evaluating that data to make business decisions. This process goes beyond the usual monitoring or a basic analysis of retweets or likes to develop an in-depth idea of the social consumer.
         </p>
+        <img class="img-fluid" src="images/image1.png">
+        <hr>
 
-        <img class="center" src="images/image1.png">
-        <h3 class="text-blue">Extract and Process Data from Social Media</h3>
-        <p class="bg-blue">
+        <!-- EXTRACT AND PROCESS DATA FROM SOCIAL MEDIA -->
+        <h3>Extract and Process Data from Social Media</h3>
+        <div class="bg-blue outline">
+        <p>
          	1) Access Tokens:
 		When authorizing, the access tokens will be provided in order to make requests to the API of social media. Usually, it is either just one token or a token with a key to it. The issue is that these tokens may become invalid due to changing the password or simply expiring.
         </p>
-        <p class="bg-blue">
+        <p>
          	2) Limits:
 		All social media have their own limit for the number of requests. While some of them allow for making quite a lots requests, the others have very strict limitations. 
         </p>
-        <p class="bg-blue">
+        <p>
          	3) Caching:
 		Social media cache data all the time. As a result, users have to face the situation when the number of followers in the API request may not match the actual number of followers in the social media. 
         </p>
-		<p class="bg-blue">
+		<p>
          	4) Pagination:
 		Social media has tons of users who generate an insane amount of content. If they used standard pagination, the user experience would  leave much to be desired.
 		For example, while the user is reading the first 10 posts on the first page of their newsfeed, their friends have created 5 more posts. Because of that, the user would see the same posts on the second page. This is why all social media use either a cursor or boundary parameters.
 		A cursor can be thought as a simple page with the difference that, instead of a number, they pass a special key that the social media returned in the first request. On the last page, this key is empty, which means that there is no data to display.
 		Boundary parameters are usually in the form of timestamp or post id. They are passed with each request, so the user does not receive the posts that are newer than specified.
-        </p>        
+        </p>      
+        </div>  
+        <br>
+        <img class="img-fluid center" src="images/image2.jpg">
+        <hr>
 
-        <img class="center" src="images/image2.jpg">
-        <h3 class="text-red">API</h3>
-         <p class="bg-red"> 
+        <!-- API -->
+        <h3>API</h3>
+        <div class="bg-red outline">
+         <p> 
             API stands for application programming interface. This is a concept in software technology that essentially refers to how multiple applications can interact with and obtain data from one another. APIs operate on an agreement of inputs and outputs.		
         </p>
-        <p class="bg-red"> 
+        <p> 
             + Application: These can be apps that you use on your smartphone or a software program that you use.
         </p>
-        <p class="bg-red"> 
+        <p> 
            + Programming: Developers use APIs to write software.
         </p>
-        <p class="bg-red"> 
+        <p> 
             + Interface: How you interact with the application.
         </p>
+        </div>
+        <br>
+        <img class="img-fluid" src="images/image3.jpg">
+        <hr>
 
-        <img class="center" src="images/image3.jpg">
+        <!-- CONCLUSION -->
         <h3>Conclusion</h3>
-        <p class="bg-yellow">
+        <p class="bg-yellow outline">
             API stands for application program interface and it refers to some protocols, tools and routines for creating software applications. An excellent API makes developing a program much easier through offering all the required building blocks. The programmer then arranges the blocks to come up with a program.
         </p>
 </div>
-
         <hr>
 
-        <h3>About me</h3>
-        <img class="thumbnail" src='images/profile.png'>
+        <!-- ABOUT -->
+        <h1>About me</h1>
+        <img class="thumbnail" src='images/profile.jpeg'>
         <h4 id='my-name'>Phat Vu</h4>
-        <span></span>
+        <hr>
+
+        <table class="table mt-4">
+                <tbody>
+                    <tr>
+                        <th> Programs tools </th>
+                        <td> Java, JavaScript </td>
+                    </tr>
+                    <tr>
+                        <th>Frontend tools</th>
+                        <td> HTML, CSS </td>
+                    </tr>
+                    <tr>
+                        <th>Database tools</th>
+                        <td>MongoDB, Mongoose, SQL</td>
+                    </tr>
+                    <tr>
+                        <th> Version Control & Deployment tools </th>
+                        <td>git, github, gitlab</td>
+                    </tr>
+                    <tr>
+                        <th>Architecture & Design</th>
+                        <td>OOP, MEAN Stack, REST, Agile, TDD</td>
+                    </tr>
+                </tbody>
+            </table>
     </body>
 </html>
